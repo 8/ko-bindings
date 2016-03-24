@@ -1,0 +1,14 @@
+[
+  {
+    "outputFileName": "Scripts/knockout-slideDownVisible.js",
+    "inputFiles": [
+      "Scripts/knockout-slideDownVisible.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/knockout-fadeVisible.js",
+    "inputFiles": [
+      "Scripts/knockout-fadeVisible.js"
+    ]
+  }
+]

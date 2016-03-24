@@ -1,0 +1,71 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title></title>
+  <script type="text/javascript" src="Scripts/jquery-2.2.1.min.js"></script>
+  <script type="text/javascript" src="Scripts/knockout-3.4.0.js"></script>
+  <script type="text/javascript" src="Scripts/knockout-slideDownVisible.min.js"></script>
+  <script type="text/javascript" src="Scripts/knockout-fadeVisible.min.js"></script>
+</head>
+<body>
+
+  <style>
+    body {
+      font-family: 'Lucida Console'
+    }
+
+    .panel {
+    }
+
+    .panel-header {
+      font-size: large;
+      padding: 4px;
+      cursor: pointer;
+      border: 1px solid lightgray;
+    }
+
+    .panel-body {
+      padding: 6px 4px 4px 4px;
+      border-left: 1px solid lightgray;
+      border-right: 1px solid lightgray;
+      border-bottom: 1px solid lightgray;
+    }
+  </style>
+
+  <div class="panel" id="panel1">
+    <div class="panel-header" data-bind="click: toggleVisibleClick">
+      <span>SlideDown - Click me to see slideDownVisible</span>
+    </div>
+    <div class="panel-body" data-bind="slideDownVisible: isVisible">
+      <div>This is the body</div>
+      <div>this is the body text</div>
+      <div>this is still the body text</div>
+    </div>
+  </div>
+
+  <div class="panel" id="panel2">
+    <div class="panel-header" data-bind="click: toggleVisibleClick">
+      <span>Fade - Click me to see fadeVisible</span>
+    </div>
+    <div class="panel-body" data-bind="fadeVisible: isVisible">
+      <div>This is the body</div>
+      <div>this is the body text</div>
+      <div>this is still the body text</div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+
+    function ViewModel() {
+      var self = this;
+      this.isVisible = ko.observable(true);
+      this.toggleVisibleClick = function () {
+        self.isVisible(!self.isVisible());
+      };
+    }
+
+    ko.applyBindings(new ViewModel(), document.getElementById('panel1'));
+    ko.applyBindings(new ViewModel(), document.getElementById('panel2'));
+  </script>
+
+</body>
+</html>

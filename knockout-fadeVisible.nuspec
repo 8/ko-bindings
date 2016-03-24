@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>knockout-fadeVisible</id>
+    <version>0.2</version>
+    <title>Knockout-FadeVisible</title>
+    <authors>Martin Kramer</authors>
+    <owners>Martin Kramer</owners>
+    <!--<licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>-->
+    <projectUrl>https://github.com/8/ko-bindings</projectUrl>
+    <!--<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A plugin for KnockoutJS that provides the 'fadeVisible' binding to toggle the visibility of elements using the animations provided by the jquery methods fadeIn() and fadeOut().</description>
+    <!--<releaseNotes>Summary of changes made in this release of the package.</releaseNotes>-->
+    <copyright>Copyright 2016</copyright>
+    <tags>knockout</tags>
+    <dependencies>
+      <dependency id="knockoutjs" version="3.4.0"/>
+      <dependency id="jQuery" version="2.2.1"/>
+    </dependencies>
+  </metadata>
+</package>

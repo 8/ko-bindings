@@ -1,0 +1,23 @@
+Summary: This solution contains 'knockout-fadeVisible' and 'knockout-slideDownVisible' which are extensions for knockout.js (http://knockoutjs.com/)
+Author: martin kramer <martin.kramer@lostindetails.com>
+License: MIT
+
+Dependencies:
+  1) jQuery.js (http://jquery.com)
+  2) knockout.js (http://knockoutjs.com)
+
+Usage:
+  1) Include jquery and knockout on your page first, then include knockout-fadeVisible.min.js and/or knockout-slideDownVisible.min.js
+     e.g.:
+    <script type="text/javascript" src="Scripts/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="Scripts/knockout-3.4.0.js"></script>
+    <script type="text/javascript" src="Scripts/knockout-fadeVisible.min.js"></script>
+    <script type="text/javascript" src="Scripts/knockout-slideDownVisible.min.js"></script>
+   
+  2) Use the binding 'fadeVisible' or 'slideDownVisible' instead of 'visible' (http://knockoutjs.com/documentation/visible-binding.html)
+     e.g.:
+     <div class="panel-body" data-bind="fadeVisible: isVisible">...
+     or <div class="panel-body" data-bind="slideDownVisible: isVisible">...
+
+Example Usage:
+  Take a look at ./ko-bindings/index.html
